@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img {
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+body {
+  background-color: rgb(237, 237, 237);
+}
+
+.portfolio {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio h1 {
+  margin-top: 2rem;
+}
+.ligne {
+  height: 5px;
+  margin: 0.5rem auto 1rem auto;
+  background-color: cadetblue;
+  width: 5rem;
+}
+
+.card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 3rem auto 0 auto;
+  padding: 1rem;
+  background-color: white;
+}
+
+.img-bloc {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-block: 1rem;
+  position: relative;
+}
+.img-bloc img {
+  position: relative;
+}
+
+.img-bloc::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: cadetblue;
+  border-radius: 50%;
+  top: -5%;
+  left: 5%;
+}
+
+.img-bloc img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.name {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.job {
+  color: #49a6e9;
+  text-transform: uppercase;
+}
+.describe {
+  margin-block: 1rem;
+}
+
+.btn-prev,
+.btn-next {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #49a6e9;
+}
+
+.btn-random {
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  text-transform: capitalize;
+  border-color: #49a6e9;
+}
+
+.btn-random:hover {
+  background-color: #49a6e9;
+  color: white;
+  transform: all 0.5s;
+  cursor: pointer;
+}
